@@ -131,7 +131,7 @@ def main(config: DictConfig):  # type: ignore
         save_folder=config.save_folder,
         save_interval=config.save_interval,
         save_num_checkpoints_to_keep=config.save_num_checkpoints_to_keep,
-        load_path=config.load_path,
+        #load_path=config.load_path,
         device=device,
         precision=config.precision,
         device_train_microbatch_size=config.device_train_microbatch_size,

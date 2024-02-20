@@ -8,13 +8,13 @@ compute:
   ## These configurations are optional
   # cluster: TODO # Name of the cluster to use for this run
   # gpu_type: a100_80gb # Type of GPU to use. We use a100_80gb in our experiments
+  # cd examples/examples/end-to-end-examples/stable_diffusion
 
 integrations:
 - integration_type: git_repo
-  git_repo: mosaicml/examples
+  git_repo: marshackVB/stable_diffusion
   ssh_clone: false
 command: |
-  cd examples/examples/end-to-end-examples/stable_diffusion
   pip install -r requirements.txt
   pip install -U datasets
   composer main.py /mnt/config/parameters.yaml
